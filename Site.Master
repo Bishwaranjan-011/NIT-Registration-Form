@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="NIT_Registration_Form.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>College Registration</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <div class="navbar">
+            <asp:Menu ID="MainMenu" runat="server" Orientation="Horizontal" OnMenuItemClick="MainMenu_MenuItemClick">
+                <Items>
+                    <asp:MenuItem Text="Student" Value="Student"></asp:MenuItem>
+                    <asp:MenuItem Text="Faculty" Value="Faculty"></asp:MenuItem>
+                    <asp:MenuItem Text="Non-Faculty" Value="NonFaculty"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
+
